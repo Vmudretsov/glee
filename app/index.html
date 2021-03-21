@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,63 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
-    
-  
+
+  <header class="header">
+    <div class="header__inner">
+      <a class="logo" href="#">
+        <img class="logo__img" src="images/logo.png" alt="logo image">
+      </a>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">Home +</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">About</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">Services</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">Pages +</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">News</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="user-nav">
+        <div class="user-nav__item user-nav__item-search">
+          <a class="user-nav__link" href="#">
+            <img class="user-nav__icon" src="images/icons/search.svg" alt="search icon">
+          </a>
+        </div>
+        <div class="user-nav__item user-nav__item-likes">
+            <a class="user-nav__link" href="#">
+              <img class="user-nav__icon" src="images/icons/heart.svg" alt="heart icon">
+              <span class="user-nav__heart-num">0</span>
+            </a>
+            <span class="user-nav__item-border"></span>
+            <a class="user-nav__link" href="#">
+              <img class="user-nav__icon" src="images/icons/cart.svg" alt="cart icon">
+              <span class="user-nav__cart-num">0</span>
+            </a>
+        </div>
+        <div class="user-nav__item user-nav__item-switch">
+          <a class="user-nav__link" href="#">
+            <img class="user-nav__icon" src="images/icons/search.svg" alt="switch icon">
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
 
   <script src="js/main.min.js"> </script>
 </body>
+
 </html>
