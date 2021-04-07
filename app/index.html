@@ -12,53 +12,55 @@
 <body>
 
   <header class="header">
-    <div class="header__inner">
-      <a class="logo" href="#">
-        <img class="logo__img" src="images/logo.png" alt="logo image">
-      </a>
-      <nav class="menu">
-        <ul class="menu__list">
-          <li class="menu__list-item">
-            <a class="menu__list-link" href="#">Home +</a>
-          </li>
-          <li class="menu__list-item">
-            <a class="menu__list-link" href="#">About</a>
-          </li>
-          <li class="menu__list-item">
-            <a class="menu__list-link" href="#">Services</a>
-          </li>
-          <li class="menu__list-item">
-            <a class="menu__list-link" href="#">Pages +</a>
-          </li>
-          <li class="menu__list-item">
-            <a class="menu__list-link" href="#">News</a>
-          </li>
-          <li class="menu__list-item">
-            <a class="menu__list-link" href="#">Contact</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="user-nav">
-        <div class="user-nav__item user-nav__item-search">
-          <a class="user-nav__link" href="#">
-            <img class="user-nav__icon" src="images/icons/search.svg" alt="search icon">
-          </a>
-        </div>
-        <div class="user-nav__item user-nav__item-likes">
-          <a class="user-nav__link" href="#">
-            <img class="user-nav__icon" src="images/icons/heart.svg" alt="heart icon">
-            <span class="user-nav__heart-num">0</span>
-          </a>
-          <span class="user-nav__item-border"></span>
-          <a class="user-nav__link" href="#">
-            <img class="user-nav__icon" src="images/icons/cart.svg" alt="cart icon">
-            <span class="user-nav__cart-num">0</span>
-          </a>
-        </div>
-        <div class="user-nav__item user-nav__item-switch">
-          <a class="user-nav__link" href="#">
-            <img class="user-nav__icon" src="images/icons/search.svg" alt="switch icon">
-          </a>
+    <div class="container-wrapper">
+      <div class="header__inner">
+        <a class="logo" href="#">
+          <img class="logo__img" src="images/logo.png" alt="logo image">
+        </a>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">Home +</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">About</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">Services</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">Pages +</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">News</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="user-nav">
+          <div class="user-nav__item user-nav__item-search">
+            <a class="user-nav__link" href="#">
+              <img class="user-nav__icon" src="images/icons/search.svg" alt="search icon">
+            </a>
+          </div>
+          <div class="user-nav__item user-nav__item-likes">
+            <a class="user-nav__link" href="#">
+              <img class="user-nav__icon" src="images/icons/heart.svg" alt="heart icon">
+              <span class="user-nav__heart-num">0</span>
+            </a>
+            <span class="user-nav__item-border"></span>
+            <a class="user-nav__link" href="#">
+              <img class="user-nav__icon" src="images/icons/cart.svg" alt="cart icon">
+              <span class="user-nav__cart-num">0</span>
+            </a>
+          </div>
+          <div class="user-nav__item user-nav__item-switch">
+            <a class="user-nav__link" href="#">
+              <img class="user-nav__icon" src="images/icons/search.svg" alt="switch icon">
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -66,7 +68,7 @@
 
   <main class="main">
     <section class="top-slider">
-      <div class="top-slider__container container">
+      <div class="top-slider__container container-wrapper">
         <div class="container">
           <div class="top-slider__inner">
             <div class="top-slider__item">
@@ -120,6 +122,38 @@
                 <img class="top-slider__img" src="images/slider/photo1.png" alt="slider image">
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="services">
+      <div class="services__container container-wrapper">
+        <div class="services__items">
+          <div class="services__item">
+            <h5 class="services__title">
+              Support 24/7.
+            </h5>
+            <p class="services__subtitle">
+              Contact us 24 hours a day, <br>
+              7 days a week.
+            </p>
+          </div>
+          <div class="services__item">
+            <h5 class="services__title">
+              Delivery.
+            </h5>
+            <p class="services__subtitle">
+              Free shipping on all US order.
+            </p>
+          </div>
+          <div class="services__item">
+            <h5 class="services__title">
+              100% Payment secure.
+            </h5>
+            <p class="services__subtitle">
+              We ensure secure payment <br>
+              with PEV.
+            </p>
           </div>
         </div>
       </div>

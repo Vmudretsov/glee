@@ -173,13 +173,11 @@
     content: '|';
     margin-left: 12px;
     margin-right: 12px;
-    
   }
 }
 
 .top-slider{
   &__container{
-    max-width: 1800px;
     background-color: #fcd7b6;
   }
   &__inner{
@@ -214,7 +212,7 @@
     line-height: 12px;
     @extend %rubik-500;
     &::after{
-      content: '-->';
+      content: url('../images/arrow.svg');
       padding-left: 56px;
     }
   }
@@ -251,7 +249,59 @@
   }
 }
 
-
+.services{
+  &__container{
+    background-color: #fef7f0;
+  }
+  &__items{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__item{
+    position: relative;
+    &:nth-child(1){
+      border-right: 1px solid rgba(36, 63, 77, 0.102);
+      height: 170px;
+      padding: 35px 200px 0 50px;
+    }
+    &:nth-child(2){
+      border-right: 1px solid rgba(36, 63, 77, 0.102);
+      height: 170px;
+      padding: 35px 150px 0 0;
+    }
+    &:nth-child(1)::before{
+      content: url('../images/time-icon.svg');
+      position: absolute;
+      left: -25px;
+      top: 50px;
+    }
+    &:nth-child(2)::before{
+      content: url('../images/delivery-icon.svg');
+      position: absolute;
+      left: -80px;
+      top: 50px;
+    }
+    &:nth-child(3)::before{
+      content: url('../images/creditcard-icon.svg');
+      position: absolute;
+      left: -80px;
+      top: 15px;
+    }
+  }
+  &__title{
+    @extend %dmsans-700;
+    font-size: 18px;
+    line-height: 40px;
+    color: #414141;
+  }
+  &__subtitle{
+    @extend %dmsans-400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #585858;
+  }
+}
 
 
 
