@@ -398,7 +398,6 @@
 }
 
 .products-more{
-  margin-bottom: 105px;
   &__items{
     display: flex;
     justify-content: space-between;
@@ -439,6 +438,7 @@
 }
 
 .products-design{
+  padding: 105px 0 120px;
   &__filter-btn{
     @extend %filter-btn;
     @extend %dmsans-700;
@@ -478,6 +478,18 @@
     font-size: 16px;
     line-height: 1.2;
     color: #a3bbc8;
+  }
+}
+
+.video{
+  &__inner{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
