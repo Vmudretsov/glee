@@ -66,7 +66,7 @@
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    padding: 16px 0 0 16px;
+    padding: 14px;
   }
   &__heart-num{
     position: absolute;
@@ -379,7 +379,7 @@
     right: 0;
     left: 0;
     opacity: 0;
-    transition: all .3s; 
+    transition: all .5s; 
   }
   &__link{
     background-color: #fff;
@@ -493,9 +493,118 @@
   }
 }
 
+.blog{
+  &__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  &__top-link{
+    @extend %dmsans-700;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #262626;
+    &::after{
+      content: url('../images/icons/blog-arrow.svg');
+      margin-left: 18px;
+    }
+  }
+  &__items{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+  &__item{
+    max-width: 370px;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    border-radius: 5px;
+    position: relative;
+  }
+  &__item-image{
+    height: 250px;
+    object-fit: cover;
+  }
+  &__item-content{
+    padding: 35px 36px 22px;
+  }
+  &__item-text{
+    @extend %dmsans-500;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #262626;
+    margin-bottom: 15px;
+    height: 60px;
+  }
+  &__item-bottom{
+    display: flex;
+    border-top: 1px solid #e0e0e0;
+    position: relative;
+  }
+  &__item-date,
+  &__item-author{
+    @extend %dmsans-700;
+    font-size: 12px;
+    line-height: 2.5;
+    color: #222933;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-left: 27px;
+  }
+  &__item-date{
+    margin-right: 28px;
+    &::before{
+      content: url('../images/icons/time.svg');
+      position: absolute;
+      left: 0;
+      top: 14px;
+    }
+  }
+  &__item-author{
+    padding-top: 10px;
+    &::before{
+      content: url('../images/icons/user.svg');
+      position: absolute;
+      left: 160px;
+      top: 14px;
+    }
+  }
+  &__item--news{
+    .blog__item-content::before{
+    content: 'news';
+    position: absolute;
+    @extend %poppins-700;
+    line-height: 14px;
+    background-color: #a3bbc8;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 36px;
+    border-radius: 15px;
+    bottom: 158px;
+    left: 28px;
+    }
+  }  
+}
+
+.partners{
+  background-color: #fef7f0;
+  &__list{
+    height: 266px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+
+
+
+
+
+
+
+
 
 @import 'media';
-
 
 
 
