@@ -24,7 +24,6 @@ body{
 
 .container-wrapper{
   max-width: 1800px;
-  padding: 0 15px;
   margin: 0 auto;
 }
 
@@ -48,3 +47,27 @@ a{
   margin-bottom: 80px;
 }
 
+.breadcrumbs{
+  display: flex;
+  justify-content: center;
+  &__list{
+    display: flex;
+    justify-content: center;
+  }
+  &__item{
+    padding-right: 20px;
+    position: relative;
+    line-height: 24px;
+    &:last-child{
+      padding-right: 0;
+    }
+    &:not(:last-child)::after{
+      content: "/";
+      position: absolute;
+      right: 7px;
+    }
+  }
+  &__link{
+    color: inherit;
+  }
+}
