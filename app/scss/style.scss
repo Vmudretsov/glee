@@ -532,6 +532,7 @@
     box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
     border-radius: 5px;
     position: relative;
+    background-color: #fff;
   }
   &__item-image{
     height: 250px;
@@ -600,10 +601,16 @@
 
 .partners{
   background-color: #fef7f0;
+  margin-top: -175px;
+  padding-top: 195px;
+  &__login{
+    margin-top: 0;
+    padding-top: 0;
+  }
   &__list{
     height: 266px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
   }
 }
@@ -632,6 +639,7 @@
     font-size: 18px;
     @extend %rubik-500;
     border: none;
+    cursor: pointer;
   }
   &__remember{
     display: flex;
@@ -646,13 +654,12 @@
   }
   &__input-rememb{
     padding-left: 24px;
-  }
+    }
   &__link-rememb{
     @extend %rubik-400;
     color: #436372;
   }
-  &__link-registr{
-    display: block;
+  &__registered{
     padding: 30px 0 22px;
     text-align: center;
     @extend %rubik-500;
@@ -666,8 +673,203 @@
     font-size: 18px;
     @extend %rubik-500;
     border: 2px solid #a3bbc8;
+    cursor: pointer;
   }
 }
+
+.stat{
+  padding: 120px 0;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__content{
+    max-width: 570px;
+    padding-left: 20px;
+  }
+  &__work{
+    display: flex;
+  }
+  &__work-num{
+    @extend %rubik-700;
+    font-size: 140px;
+    line-height: 32px;
+    color: #a3bbc8;
+    margin-right: 26px;
+  }
+  &__work-text{
+    font-size: 16px;
+    line-height: 30px;
+    color: $about;
+    margin-top: -20px;
+  }
+  &__title{
+    padding: 50px 0;
+    font-size: 36px;
+    line-height: 32px;
+    @extend %dmsans-700;
+    color: $about;
+  }
+  &__text{
+    font-size: 16px;
+    line-height: 30px;
+    color: $about;
+    padding-bottom: 65px;
+    border-bottom: 2px solid rgba(9, 49, 111, 0.102);
+  }
+  &__numbers{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+  }
+  &__numbers-item{
+    @extend %dmsans-700;
+    padding: 12px 25px 20px 0px;
+    border-right: 1px solid rgba(9, 49, 111, 0.102);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__numbers-item:last-child{
+    border: none;
+  }
+  &__item-icon{
+    margin-right: 20px;
+  }
+  &__item-num{
+    font-size: 36px;
+    line-height: 38px;
+    color: $about;
+    display: block;
+  }
+  &__item-descr{
+    font-size: 16px;
+    line-height: 17px;
+    color: #4c4c4c;
+  }
+}
+
+.numbers{
+  padding: 80px 0;
+  background-color: #fcd7b6;
+  &__items{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+  &__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @extend %dmsans-700;
+    line-height: 32px;
+    color: $about;
+  }
+  &__num{
+    font-size: 36px;
+    padding: 20px 0;
+  }
+  &__text{
+    font-size: 18px;
+  }
+}
+
+.team{
+  padding: 120px 0 180px;
+  &__inner{
+    display: flex;
+  }
+  &__content{
+    max-width: 310px;
+    color: $about;
+  }
+  &__title{
+    @extend %dmsans-700;
+    font-size: 36px;
+    line-height: 32px;
+  }
+  &__text{
+    padding: 30px 0 40px;
+    font-size: 16px;
+    line-height: 30px;
+  }
+  &__link{
+    color: #fff;
+    padding: 18px 25px 18px 20px;
+    font-size: 15px;
+    line-height: 55px;
+    @extend %poppins-700;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(67, 99, 114, 0.4);
+    border-radius: 5px;
+    background-color: #a3bbc8;
+    &::after{
+      content: url('../images/about/arrow.svg');
+      padding-left: 20px;
+    }
+  }
+  &__items{
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 110px 30px;
+    padding-left: 90px;
+  }
+  &__item{
+    position: relative;
+  }
+  &__box{
+    position: absolute;
+    padding: 30px 16px 30px 25px;
+    max-width: 330px;
+    background-color: #fff;
+    left: 0;
+    bottom: -60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__name{
+    @extend %dmsans-700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #436372;
+  }
+  &__subtitle{
+    font-size: 16px;
+    line-height: 30px;
+    color: #565872;
+  }
+  &__links{
+    margin-left: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__social-link{
+    background-color: #f6f6f6;
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+  }
+  &__social-link:not(:last-child){
+    margin-right: 8px;
+  }
+  &__link-instagram{
+    margin-top: 12px;
+    margin-left: 12px;
+  }
+  &__link-google{
+    margin-top: 14px;
+    margin-left: 10px;
+  }
+}
+
+
+
+
+
 
 
 
