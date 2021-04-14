@@ -701,7 +701,7 @@
   &__work-text{
     font-size: 16px;
     line-height: 30px;
-    color: $about;
+    color: $text;
     margin-top: -20px;
   }
   &__title{
@@ -709,12 +709,12 @@
     font-size: 36px;
     line-height: 32px;
     @extend %dmsans-700;
-    color: $about;
+    color: $text;
   }
   &__text{
     font-size: 16px;
     line-height: 30px;
-    color: $about;
+    color: $text;
     padding-bottom: 65px;
     border-bottom: 2px solid rgba(9, 49, 111, 0.102);
   }
@@ -740,7 +740,7 @@
   &__item-num{
     font-size: 36px;
     line-height: 38px;
-    color: $about;
+    color: $text;
     display: block;
   }
   &__item-descr{
@@ -764,7 +764,7 @@
     align-items: center;
     @extend %dmsans-700;
     line-height: 32px;
-    color: $about;
+    color: $text;
   }
   &__num{
     font-size: 36px;
@@ -782,7 +782,7 @@
   }
   &__content{
     max-width: 310px;
-    color: $about;
+    color: $text;
   }
   &__title{
     @extend %dmsans-700;
@@ -866,8 +866,37 @@
   }
 }
 
-
-
+.terms{
+  padding: 120px 0;
+  color: $text;
+  &__title{
+    @extend %rubik-500;
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+  &__top{
+    margin-bottom: 70px;
+  }
+  &__top-list{
+    list-style-type: decimal-leading-zero;
+    margin-left: 25px;
+  }
+  &__top-item{
+    p{
+      padding-left: 6px;
+    }
+  }
+  &__top-item:not(:last-child){
+    margin-bottom: 30px;
+  }
+  &__text{
+    font-size: 16px;
+    line-height: 30px;
+  }
+  &__bottom-item:not(:last-child){
+    margin-bottom: 70px;
+  }
+}
 
 
 
