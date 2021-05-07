@@ -29,8 +29,19 @@ $(function() {
     readOnly: true
   });
 
+  $(".product-grid__star").rateYo({
+    starWidth: "18px",
+    normalFill: "#d6d6d6",
+    ratedFill: "#ffcc00",
+    spacing: "12px",
+    readOnly: true
+  });
+
   var mixer = mixitup('.products__item');
 
   var mixer = mixitup('.products-design__item');
   
 });
+
+
+
