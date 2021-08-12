@@ -1023,17 +1023,18 @@
       margin-bottom: 25px;
     }
   }
-  &__image{
+  &__imagelink{
     margin-right: 20px;
     width: 70px;
-    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 2px solid #f2f2f2;
   }
   &__img{
-    object-fit: cover;
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
   }
   &__content{
     color: #333;
@@ -1048,6 +1049,31 @@
   }
   &__price{
     font-size: 15px;
+  }
+}
+
+.filter-search{
+  &__form{
+    display: flex;
+  }
+  &__input{
+    border: 2px solid #edf1f4;
+    background-color: #fff;
+    border-radius: 5px;
+    width: 225px;
+    height: 40px;
+    padding: 0 15px;
+  }
+  &__btn{
+    border: none;
+    background-color: #edf1f4;
+    height: 40px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: -5px;
   }
 }
 
@@ -1381,6 +1407,121 @@
   right: 0;
 }
 
+.blog-page{
+  padding: 120px 0;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content{
+    width: 830px;
+  }
+  &__item:not(:last-child){
+    margin-bottom: 50px;
+  }
+  &__image-link{
+    width: 830px;
+    display: inline-block;
+  }
+  &__image{
+    width: 830px;
+    height: 500px;
+    object-fit: cover;
+  }
+  &__links-box{
+    width: 275px;
+    padding: 22px 10px 22px 40px;
+    color: #fff;
+    background-color: #a3bbc8;
+    margin-top: -71px;
+    position: relative;
+    &::after{
+      content: '';
+      position: absolute;
+    }
+  }
+  &__date,
+  &__admin{
+    font-size: 12px;
+  }
+  &__date{
+    margin-right: 45px;
+    position: relative;
+    &::before{
+      content: url('../images/icons/blog-calendar.svg');
+      position: absolute;
+      left: -20px;
+      top: -1px;
+    }
+  }
+  &__admin{
+    color: inherit;
+    position: relative;
+    &::before{
+      content: url('../images/icons/blog-user.svg');
+      position: absolute;
+      left: -20px;
+      top: -3px;
+    }
+  }
+  &__title-link{
+    margin: 40px 0;
+    @extend %rubik-300;
+    font-size: 36px;
+    color: #333;
+    display: inline-block;
+  }
+  &__text{
+    @extend %rubik-400;
+    font-size: 16px;
+    line-height: 30px;
+    color: $text;
+    margin-bottom: 40px;
+  }
+  &__btn{
+    width: 180px;
+    display: inline-block;
+    @extend %rubik-500;
+    font-size: 15px;
+    color: #a3bbc8;
+    border: 1px solid #a3bbc8;
+    padding: 20px;
+    position: relative;
+    &::after{
+      content: url('../images/icons/blog-page.svg');
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 20px;
+
+    }
+  }
+  &__aside{
+    width: 270px;
+  }
+  .pagination{
+    justify-content: start;
+    padding-top: 100px;
+  }
+}
+
+.blog-page__recent{
+  .filter-recent__imagelink{
+    border: none;
+  }
+  .filter-recent__price{
+    padding-left: 20px;
+    font-size: 14px;
+    color: #9a9a9a;
+    position: relative;
+    &::after{
+      position: absolute;
+      content: url('../images/icons/calendar.svg');
+      top: 0;
+      left: 0;
+    }
+  }
+}
 
 
 
