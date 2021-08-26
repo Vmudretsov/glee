@@ -1,4 +1,4 @@
-$about: #243f4d;
+$text: #243f4d;
 
 %rubik-300{
   font-family: 'Rubik-Light', sans-serif;
@@ -61,6 +61,14 @@ $about: #243f4d;
   background-color: transparent;
   padding: 0;
   border: none;
+}
+
+%checkbox-hidden{
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
 }
 
 @function max($numbers...) {
