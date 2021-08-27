@@ -1,0 +1,61 @@
+.modal{
+  max-width: 470px;
+  margin: 120px auto;
+  &__label{
+    display: block;
+    margin-bottom: 30px;
+    @extend %rubik-500;
+    color: #436372;
+  }
+  &__input{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    border: 2px solid #f6f6f6;
+    padding: 15px;
+  }
+  &__btn-login{
+    width: 100%;
+    color: #fffefe;
+    background-color: #a3bbc8;
+    padding: 18px 0;
+    font-size: 18px;
+    @extend %rubik-500;
+    border: none;
+    cursor: pointer;
+  }
+  &__remember{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 28px;
+    border-bottom: 2px solid #f6f6f6;
+  }
+  &__label-rememb{
+    display: block;
+    @extend %rubik-500;
+    color: #436372;
+  }
+  &__input-rememb{
+    padding-left: 24px;
+    }
+  &__link-rememb{
+    @extend %rubik-400;
+    color: #436372;
+  }
+  &__registered{
+    padding: 30px 0 22px;
+    text-align: center;
+    @extend %rubik-500;
+    color: #436372;
+  }
+  &__btn-create{
+    width: 100%;
+    color: #243f4d;
+    background-color: #fff;
+    padding: 18px 0;
+    font-size: 18px;
+    @extend %rubik-500;
+    border: 2px solid #a3bbc8;
+    cursor: pointer;
+  }
+}

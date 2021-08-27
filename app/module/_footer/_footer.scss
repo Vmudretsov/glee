@@ -1,0 +1,77 @@
+.footer-top{
+  padding: 75px 0;
+  border-bottom: 1px solid rgba(163, 187, 200, .4);
+  display: flex;
+  &__contact{
+    width: 220px;
+    margin-right: 80px;
+  }
+  &__nav{
+    width: 200px;
+    margin-right: 100px;
+  }
+  &__item-form{
+    width: 270px;
+  }
+  &__logo{
+    margin-bottom: 24px;
+    display: block;
+  }
+  &__address,
+  &__email,
+  &__phone{
+    display: block;
+    margin-bottom: 12px;
+  }
+  &__title{
+    @extend %dmsans-700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #1f2044; 
+    text-transform: uppercase;
+    margin-bottom: 26px;
+  }
+  &__link{
+    display: inline-block;
+    margin-bottom: 12px;
+  }
+  &__text{
+    margin-bottom: 34px;
+  }
+  &__form-input{
+    background-color: #fef7f0;
+    max-width: 170px;
+    width: 100%;
+    border: none;
+    padding: 12px;
+    &::placeholder{
+      @extend %dmsans-500;
+      color: #234969;
+      font-size: 12px;
+      line-height: 1.2;
+    }
+  }
+  &__form-btn{
+    border: none;
+    background-color: #a3bbc8;
+    color: #fff;
+    padding: 12px 16px;
+    margin-left: -4px;
+    cursor: pointer;
+  }
+}
+
+.footer-bottom{
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__nav-link{
+    line-height: 32px;
+  }
+  &__nav-link:not(:last-child)::after{
+    content: '|';
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
