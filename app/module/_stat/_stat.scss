@@ -1,0 +1,124 @@
+.stat{
+  padding: 120px 0;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__content{
+    max-width: 570px;
+    padding-left: 20px;
+  }
+  &__work{
+    display: flex;
+  }
+  &__work-num{
+    @extend %rubik-700;
+    font-size: 140px;
+    line-height: 32px;
+    color: #a3bbc8;
+    margin-right: 26px;
+  }
+  &__work-text{
+    font-size: 16px;
+    line-height: 30px;
+    color: $text;
+    margin-top: -20px;
+  }
+  &__title{
+    padding: 50px 0;
+    font-size: 36px;
+    line-height: 32px;
+    @extend %dmsans-700;
+    color: $text;
+  }
+  &__text{
+    font-size: 16px;
+    line-height: 30px;
+    color: $text;
+    padding-bottom: 65px;
+    border-bottom: 2px solid rgba(9, 49, 111, 0.102);
+  }
+  &__numbers{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+  }
+  &__numbers-item{
+    @extend %dmsans-700;
+    padding: 12px 25px 20px 0px;
+    border-right: 1px solid rgba(9, 49, 111, 0.102);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__numbers-item:last-child{
+    border: none;
+  }
+  &__item-icon{
+    margin-right: 20px;
+  }
+  &__item-num{
+    font-size: 36px;
+    line-height: 38px;
+    color: $text;
+    display: block;
+  }
+  &__item-descr{
+    font-size: 16px;
+    line-height: 17px;
+    color: #4c4c4c;
+  }
+}
+
+@media (max-width: 1050px){
+  .stat{
+    &__img{
+      display: none;
+    }
+    &__inner{
+      justify-content: center;
+    }
+    &__content{
+      padding-left: 0;
+    }
+  }
+}
+
+@media (max-width: 768px){
+  .stat{
+    padding: 80px 0;
+    &__work-num{
+      font-size: 110px;
+      line-height: 42px;
+    }
+    &__title{
+      padding: 30px 0;
+      font-size: 34px;
+      line-height: 32px;
+    }
+    &__text{
+      padding-bottom: 35px;
+    }
+    &__numbers{
+      display: block;
+    }
+    &__numbers-item{
+      padding: 12px 0 20px;
+      border-bottom: 1px solid rgba(9,49,111,0.102);
+      border-right: none;
+    }
+  }
+}
+
+@media (max-width: 450px){
+  .stat{
+    padding: 60px 0;
+    &__text{
+      padding-bottom: 25px;
+    }
+    &__numbers{
+      padding-top: 15px;
+    }
+  }
+}

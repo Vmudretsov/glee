@@ -97,4 +97,22 @@ a{
   }
 }
 
+@media (max-width: 768px){
+  .title{
+    font-size: 33px;
+    line-height: 40px;
+  }
+}
 
+
+@media (max-width: 450px){
+  .title{
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .filter{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+}

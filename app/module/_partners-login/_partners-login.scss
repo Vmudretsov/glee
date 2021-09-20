@@ -1,0 +1,43 @@
+.partners{
+  background-color: #fef7f0;
+  margin-top: -175px;
+  padding-top: 195px;
+  &__login{
+    margin-top: 0;
+    padding-top: 0;
+  }
+  &__list{
+    height: 266px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1050px){
+  .partners{
+    &__list{
+      flex-wrap: wrap;
+      height: auto;
+    }
+    &__item{
+      padding: 20px 40px;
+    }
+  }
+}
+
+@media (max-width: 768px){
+  .partners{
+    &__item{
+      padding: 20px 25px;
+    }
+  }
+}
+
+@media (max-width: 450px){
+  .partners{
+    &__item{
+      padding: 20px;
+    }
+  }
+}

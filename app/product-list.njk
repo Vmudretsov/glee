@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glee</title>
+  <link rel="stylesheet" href="css/product-list.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+{% include 'app/module/_header/_header.html' %}
+
+  <main class="main">
+
+    {% include 'app/module/_top/_top.html' %}
+
+    <section class="product">
+      <div class="container">
+        <div class="product__inner">
+          <button class="product__filters-btn"></button>
+          <div class="product__filters filter">
+
+            <div class="filter__item filter-category">
+              <div class="filter__box-title">
+                <h3 class="filter__title">category</h3>
+                <img src="images/products/icons/filter-line.svg" alt="icon line">
+              </div>
+              <form class="filter-category__form" action="#">
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox" checked>
+                  <div class="filter-category__checkbox">
+                    <span>Chair</span>
+                    <span><img src="images/products/icons/filter-chevron.svg" alt="chevron icon"></span>
+                  </div>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <span>Table</span>
+                    <span><img src="images/products/icons/filter-chevron.svg" alt="chevron icon"></span>
+                  </div>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <span>Lamp</span>
+                    <span><img src="images/products/icons/filter-chevron.svg" alt="chevron icon"></span>
+                  </div>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <span>Watch</span>
+                    <span><img src="images/products/icons/filter-chevron.svg" alt="chevron icon"></span>
+                  </div>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <span>Clock</span>
+                    <span><img src="images/products/icons/filter-chevron.svg" alt="chevron icon"></span>
+                  </div>
+                </label>
+              </form>
+            </div>
+
+            <div class="filter__item filter-price">
+              <div class="filter__box-title">
+                <h3 class="filter__title">price</h3>
+                <img src="images/products/icons/filter-line.svg" alt="icon line">
+              </div>
+              <form class="filter-price__form" action="#">
+                <input class="filter-price__input" type="text" data-min="0" data-max="900" data-from="100"
+                  data-to="500">
+                <label class="filter-price__label">
+                  <span class="filter-price__from"></span>
+                  <span class="filter-price__to"></span>
+                </label>
+              </form>
+            </div>
+
+            <div class="filter__item filter-brand">
+              <div class="filter__box-title">
+                <h3 class="filter__title">brand</h3>
+                <img src="images/products/icons/filter-line.svg" alt="icon line">
+              </div>
+              <form class="filter-brand__form" action="#">
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox" checked>
+                  <div class="filter-brand__checkbox">
+                    <span>RFL</span>
+                    <span>(10)</span>
+                  </div>
+                </label>
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox">
+                  <div class="filter-brand__checkbox">
+                    <span>Brothers</span>
+                    <span>(21)</span>
+                  </div>
+                </label>
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox">
+                  <div class="filter-brand__checkbox">
+                    <span>Regal</span>
+                    <span>(3)</span>
+                  </div>
+                </label>
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox">
+                  <div class="filter-brand__checkbox">
+                    <span>Nadia</span>
+                    <span>(14)</span>
+                  </div>
+                </label>
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox">
+                  <div class="filter-brand__checkbox">
+                    <span>Otobi</span>
+                    <span>(6)</span>
+                  </div>
+                </label>
+              </form>
+            </div>
+
+            <div class="filter__item filter-recent">
+              <div class="filter__box-title">
+                <h3 class="filter__title">recent products</h3>
+                <img src="images/products/icons/filter-line.svg" alt="icon line">
+              </div>
+              <div class="filter-recent__items">
+                <div class="filter-recent__item">
+                  <div class="filter-recent__image">
+                    <a class="filter-recent__imagelink" href="#">
+                      <img class="filter-recent__img" src="images/products/recent/1.jpg" alt="recent product image">
+                    </a>
+                  </div>
+                  <div class="filter-recent__content">
+                    <a class="filter-recent__link" href="#">
+                      Pendant lamp
+                    </a>
+                    <div class="filter-recent__star" data-rateyo-rating="4"></div>
+                    <span class="filter-recent__price">23$</span>
+                  </div>
+                </div>
+                <div class="filter-recent__item">
+                  <div class="filter-recent__image">
+                    <a class="filter-recent__imagelink" href="#">
+                      <img class="filter-recent__img" src="images/products/recent/2.jpg" alt="recent product image">
+                    </a>
+                  </div>
+                  <div class="filter-recent__content">
+                    <a class="filter-recent__link" href="#">
+                      Pendant lamp
+                    </a>
+                    <div class="filter-recent__star" data-rateyo-rating="4"></div>
+                    <span class="filter-recent__price">23$</span>
+                  </div>
+                </div>
+                <div class="filter-recent__item">
+                  <div class="filter-recent__image">
+                    <a class="filter-recent__imagelink" href="#">
+                      <img class="filter-recent__img" src="images/products/recent/3.jpg" alt="recent product image">
+                    </a>
+                  </div>
+                  <div class="filter-recent__content">
+                    <a class="filter-recent__link" href="#">
+                      Pendant lamp
+                    </a>
+                    <div class="filter-recent__star" data-rateyo-rating="4"></div>
+                    <span class="filter-recent__price">23$</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="product-content">
+            <div class="product-content__box">
+              <div class="products__items mix category-furnitures">
+                <img src="images/products/1.jpg" alt="product image">
+                <div class="products__items-box">
+                  <div class="products__items-title">Wooden radio</div>
+                  <span class="products__items-price">$29.00</span>
+                </div>
+                <div class="products__icons">
+                  <a class="products__link" href="#">
+                    <img class="products__search-icon" src="images/products/icons/product-search.svg"
+                      alt="product icon image">
+                  </a>
+                  <a class="products__link" href="#">
+                    <img class="products__cart-icon" src="images/products/icons/product-cart.svg"
+                      alt="product icon image">
+                  </a>
+                  <a class="products__link" href="#">
+                    <img class="products__heart-icon" src="images/products/icons/product-heart.svg"
+                      alt="product icon image">
+                  </a>
+                </div>
+              </div>
+              <div class="products__items mix category-chairs">
+                <img src="images/products/2.jpg" alt="product image">
+                <div class="products__items-box">
+                  <div class="products__items-title">Wooden chair</div>
+                  <span class="products__items-price">$29.00</span>
+                </div>
+                <div class="products__icons">
+                  <a class="products__link" href="#">
+                    <img class="products__search-icon" src="images/products/icons/product-search.svg"
+                      alt="product icon image">
+                  </a>
+                  <a class="products__link" href="#">
+                    <img class="products__cart-icon" src="images/products/icons/product-cart.svg"
+                      alt="product icon image">
+                  </a>
+                  <a class="products__link" href="#">
+                    <img class="products__heart-icon" src="images/products/icons/product-heart.svg"
+                      alt="product icon image">
+                  </a>
+                </div>
+              </div>
+              <div class="products__items mix category-lighting">
+                <img src="images/products/3.jpg" alt="product image">
+                <div class="products__items-box">
+                  <div class="products__items-title">White chair</div>
+                  <span class="products__items-price">$29.00</span>
+                </div>
+                <div class="products__icons">
+                  <a class="products__link" href="#">
+                    <img class="products__search-icon" src="images/products/icons/product-search.svg"
+                      alt="product icon image">
+                  </a>
+                  <a class="products__link" href="#">
+                    <img class="products__cart-icon" src="images/products/icons/product-cart.svg"
+                      alt="product icon image">
+                  </a>
+                  <a class="products__link" href="#">
+                    <img class="products__heart-icon" src="images/products/icons/product-heart.svg"
+                      alt="product icon image">
+                  </a>
+                </div>
+              </div>
+              <div class="products__items mix category-furnitures">
+                <img src="images/products/4.jpg" alt="product image">
+                <div class="products__items-box">
+                  <div class="products__items-title">Retro table</div>
+                  <span class="products__items-price">$29.00</span>
+                </div>
+                <div class="products__icons">
+                  <a class="products__link" href="#">
+                    <img class="products__search-icon" src="images/products/icons/product-search.svg"
+                      alt="product icon image">
+                  </a>
+                  <a class="products__link" href="#">
+                    <img class="products__cart-icon" src="images/products/icons/product-cart.svg"
+                      alt="product icon image">
+                  </a>
+                  <a class="products__link" href="#">
+                    <img class="products__heart-icon" src="images/products/icons/product-heart.svg"
+                      alt="product icon image">
+                  </a>
+                </div>
+              </div>
+              <div class="products__items mix category-furnitures">
+                <img src="images/products/5.jpg" alt="product image">
+                <div class="products__items-box">
+                  <div class="products__items-title">Wooden radio</div>
+                  <span class="products__items-price">$29.00</span>
+                </div>
+                <div class="products__icons">
+                  <a class="products__link" href="#">
+                    <img class="products__search-icon" src="images/products/icons/product-search.svg"
+                      alt="product icon image">
+                  </a>
+                  <a class="products__link" href="#">
+                    <img class="products__cart-icon" src="images/products/icons/product-cart.svg"
+                      alt="product icon image">
+                  </a>
+                  <a class="products__link" href="#">
+                    <img class="products__heart-icon" src="images/products/icons/product-heart.svg"
+                      alt="product icon image">
+                  </a>
+                </div>
+              </div>
+              <div class="products__items mix category-decor">
+                <img src="images/products/6.jpg" alt="product image">
+                <div class="products__items-box">
+                  <div class="products__items-title">Wooden chair</div>
+                  <span class="products__items-price">$29.00</span>
+                </div>
+                <div class="products__icons">
+                  <a class="products__link" href="#">
+                    <img class="products__search-icon" src="images/products/icons/product-search.svg"
+                      alt="product icon image">
+                  </a>
+                  <a class="products__link" href="#">
+                    <img class="products__cart-icon" src="images/products/icons/product-cart.svg"
+                      alt="product icon image">
+                  </a>
+                  <a class="products__link" href="#">
+                    <img class="products__heart-icon" src="images/products/icons/product-heart.svg"
+                      alt="product icon image">
+                  </a>
+                </div>
+              </div>
+              <div class="products__items mix category-chairs">
+                <img src="images/products/7.jpg" alt="product image">
+                <div class="products__items-box">
+                  <div class="products__items-title">White chair</div>
+                  <span class="products__items-price">$29.00</span>
+                </div>
+                <div class="products__icons">
+                  <a class="products__link" href="#">
+                    <img class="products__search-icon" src="images/products/icons/product-search.svg"
+                      alt="product icon image">
+                  </a>
+                  <a class="products__link" href="#">
+                    <img class="products__cart-icon" src="images/products/icons/product-cart.svg"
+                      alt="product icon image">
+                  </a>
+                  <a class="products__link" href="#">
+                    <img class="products__heart-icon" src="images/products/icons/product-heart.svg"
+                      alt="product icon image">
+                  </a>
+                </div>
+              </div>
+              <div class="products__items mix category-lighting">
+                <img src="images/products/8.jpg" alt="product image">
+                <div class="products__items-box">
+                  <div class="products__items-title">Retro table</div>
+                  <span class="products__items-price">$29.00</span>
+                </div>
+                <div class="products__icons">
+                  <a class="products__link" href="#">
+                    <img class="products__search-icon" src="images/products/icons/product-search.svg"
+                      alt="product icon image">
+                  </a>
+                  <a class="products__link" href="#">
+                    <img class="products__cart-icon" src="images/products/icons/product-cart.svg"
+                      alt="product icon image">
+                  </a>
+                  <a class="products__link" href="#">
+                    <img class="products__heart-icon" src="images/products/icons/product-heart.svg"
+                      alt="product icon image">
+                  </a>
+                </div>
+              </div>
+              <div class="products__items mix category-furnitures">
+                <img src="images/products/1.jpg" alt="product image">
+                <div class="products__items-box">
+                  <div class="products__items-title">Wooden radio</div>
+                  <span class="products__items-price">$29.00</span>
+                </div>
+                <div class="products__icons">
+                  <a class="products__link" href="#">
+                    <img class="products__search-icon" src="images/products/icons/product-search.svg"
+                      alt="product icon image">
+                  </a>
+                  <a class="products__link" href="#">
+                    <img class="products__cart-icon" src="images/products/icons/product-cart.svg"
+                      alt="product icon image">
+                  </a>
+                  <a class="products__link" href="#">
+                    <img class="products__heart-icon" src="images/products/icons/product-heart.svg"
+                      alt="product icon image">
+                  </a>
+                </div>
+              </div>
+              <div class="products__items mix category-chairs">
+                <img src="images/products/2.jpg" alt="product image">
+                <div class="products__items-box">
+                  <div class="products__items-title">Wooden chair</div>
+                  <span class="products__items-price">$29.00</span>
+                </div>
+                <div class="products__icons">
+                  <a class="products__link" href="#">
+                    <img class="products__search-icon" src="images/products/icons/product-search.svg"
+                      alt="product icon image">
+                  </a>
+                  <a class="products__link" href="#">
+                    <img class="products__cart-icon" src="images/products/icons/product-cart.svg"
+                      alt="product icon image">
+                  </a>
+                  <a class="products__link" href="#">
+                    <img class="products__heart-icon" src="images/products/icons/product-heart.svg"
+                      alt="product icon image">
+                  </a>
+                </div>
+              </div>
+              <div class="products__items mix category-lighting">
+                <img src="images/products/3.jpg" alt="product image">
+                <div class="products__items-box">
+                  <div class="products__items-title">White chair</div>
+                  <span class="products__items-price">$29.00</span>
+                </div>
+                <div class="products__icons">
+                  <a class="products__link" href="#">
+                    <img class="products__search-icon" src="images/products/icons/product-search.svg"
+                      alt="product icon image">
+                  </a>
+                  <a class="products__link" href="#">
+                    <img class="products__cart-icon" src="images/products/icons/product-cart.svg"
+                      alt="product icon image">
+                  </a>
+                  <a class="products__link" href="#">
+                    <img class="products__heart-icon" src="images/products/icons/product-heart.svg"
+                      alt="product icon image">
+                  </a>
+                </div>
+              </div>
+              <div class="products__items mix category-furnitures">
+                <img src="images/products/4.jpg" alt="product image">
+                <div class="products__items-box">
+                  <div class="products__items-title">Retro table</div>
+                  <span class="products__items-price">$29.00</span>
+                </div>
+                <div class="products__icons">
+                  <a class="products__link" href="#">
+                    <img class="products__search-icon" src="images/products/icons/product-search.svg"
+                      alt="product icon image">
+                  </a>
+                  <a class="products__link" href="#">
+                    <img class="products__cart-icon" src="images/products/icons/product-cart.svg"
+                      alt="product icon image">
+                  </a>
+                  <a class="products__link" href="#">
+                    <img class="products__heart-icon" src="images/products/icons/product-heart.svg"
+                      alt="product icon image">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="pagination">
+              <ul class="pagination__list">
+                <li class="pagination__item"><a class="pagination__link pagination__link--active" href="#">1</a></li>
+                <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
+                <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
+                <li class="pagination__item"><a class="pagination__link" href="#">Next</a></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    {% include 'app/module/_partners-login/_partners-login.html' %}
+
+
+  </main>
+
+  {% include 'app/module/_footer/_footer.html' %}
+
+  <script src="js/main.min.js"> </script>
+</body>
+
+</html>

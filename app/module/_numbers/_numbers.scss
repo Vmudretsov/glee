@@ -1,0 +1,54 @@
+.numbers{
+  padding: 80px 0;
+  background-color: #fcd7b6;
+  &__items{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: wrap;
+  }
+  &__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @extend %dmsans-700;
+    line-height: 32px;
+    color: $text;
+  }
+  &__num{
+    font-size: 36px;
+    padding: 20px 0;
+  }
+  &__text{
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1050px){
+  .numbers{
+    padding: 40px 0;
+    &__items{
+      justify-content: center;
+      align-items: center;
+    }
+    &__item{
+      padding: 20px 40px;
+    }
+  }
+}
+
+@media (max-width: 600px){
+  .numbers{
+    &__item{
+      padding: 20px 16px;
+    }
+  }
+}
+
+@media (max-width: 450px){
+  .numbers{
+    &__item{
+      padding: 15px 25px;
+    }
+  }
+}

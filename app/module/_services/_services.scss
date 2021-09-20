@@ -1,0 +1,102 @@
+.services{
+  &__container{
+    background-color: #fef7f0;
+  }
+  &__items{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__item{
+    position: relative;
+    &:nth-child(1){
+      border-right: 1px solid rgba(36, 63, 77, 0.102);
+      height: 170px;
+      padding: 35px 200px 0 50px;
+    }
+    &:nth-child(2){
+      border-right: 1px solid rgba(36, 63, 77, 0.102);
+      height: 170px;
+      padding: 35px 150px 0 0;
+    }
+    &:nth-child(1)::before{
+      content: url('../images/icons/time-icon.svg');
+      position: absolute;
+      left: -25px;
+      top: 50px;
+    }
+    &:nth-child(2)::before{
+      content: url('../images/icons/delivery-icon.svg');
+      position: absolute;
+      left: -80px;
+      top: 50px;
+    }
+    &:nth-child(3)::before{
+      content: url('../images/icons/creditcard-icon.svg');
+      position: absolute;
+      left: -80px;
+      top: 15px;
+    }
+  }
+  &__title{
+    @extend %dmsans-700;
+    font-size: 18px;
+    line-height: 40px;
+    color: #414141;
+  }
+  &__subtitle{
+    @extend %dmsans-400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #585858;
+  }
+}
+
+@media (max-width: 1300px){
+  .services{
+    &__items{
+      flex-direction: column;
+    }
+    &__item{
+      padding-left: 75px;
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3){
+        border-right: none;
+        padding: 20px 0 0 0;
+        height: 150px;
+      }
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3){
+        &::before{
+          left: -75px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 450px){
+  .services{
+    &__items{
+      padding-top: 70px;
+    }
+    &__item{
+      width: 270px;
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3){
+        &::before{
+          top: -45px;
+          left: 115px;
+        }
+      }
+      &:nth-child(2){
+        &::before{
+          top: -10px;
+        }
+      }
+    }
+  }
+}
