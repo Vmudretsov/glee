@@ -5,6 +5,7 @@
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
+    flex-wrap: wrap;
   }
   &__item{
     display: flex;
@@ -20,5 +21,34 @@
   }
   &__text{
     font-size: 18px;
+  }
+}
+
+@media (max-width: 1050px){
+  .numbers{
+    padding: 40px 0;
+    &__items{
+      justify-content: center;
+      align-items: center;
+    }
+    &__item{
+      padding: 20px 40px;
+    }
+  }
+}
+
+@media (max-width: 600px){
+  .numbers{
+    &__item{
+      padding: 20px 16px;
+    }
+  }
+}
+
+@media (max-width: 450px){
+  .numbers{
+    &__item{
+      padding: 15px 25px;
+    }
   }
 }

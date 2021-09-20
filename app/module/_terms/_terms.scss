@@ -29,3 +29,41 @@
     margin-bottom: 70px;
   }
 }
+
+
+@media (max-width: 1200px){
+  .terms{
+    padding: 60px 0;
+    &__top{
+      margin-bottom: 40px;
+    }
+    &__top-item:not(:last-child){
+      margin-bottom: 20px;
+    }
+    &__bottom-item:not(:last-child){
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media (max-width: 600px){
+  .terms{
+    &__title{
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    &__text{
+    font-size: 14px;
+    line-height: 24px;
+    }
+    &__top{
+      margin-bottom: 30px;
+    }
+    &__top-item:not(:last-child){
+      margin-bottom: 10px;
+    }
+    &__bottom-item:not(:last-child){
+      margin-bottom: 30px;
+    }
+  }
+}

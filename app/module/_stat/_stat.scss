@@ -70,3 +70,55 @@
     color: #4c4c4c;
   }
 }
+
+@media (max-width: 1050px){
+  .stat{
+    &__img{
+      display: none;
+    }
+    &__inner{
+      justify-content: center;
+    }
+    &__content{
+      padding-left: 0;
+    }
+  }
+}
+
+@media (max-width: 768px){
+  .stat{
+    padding: 80px 0;
+    &__work-num{
+      font-size: 110px;
+      line-height: 42px;
+    }
+    &__title{
+      padding: 30px 0;
+      font-size: 34px;
+      line-height: 32px;
+    }
+    &__text{
+      padding-bottom: 35px;
+    }
+    &__numbers{
+      display: block;
+    }
+    &__numbers-item{
+      padding: 12px 0 20px;
+      border-bottom: 1px solid rgba(9,49,111,0.102);
+      border-right: none;
+    }
+  }
+}
+
+@media (max-width: 450px){
+  .stat{
+    padding: 60px 0;
+    &__text{
+      padding-bottom: 25px;
+    }
+    &__numbers{
+      padding-top: 15px;
+    }
+  }
+}

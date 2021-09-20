@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Glee</title>
   <link rel="stylesheet" href="css/product-list.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -18,6 +19,9 @@
         <img class="logo__img" src="images/logo.png" alt="logo image">
       </a>
       <nav class="menu">
+        <button class="menu__btn">
+          <span></span>
+        </button>
         <ul class="menu__list">
           <li class="menu__list-item">
             <a class="menu__list-link" href="#">Home +</a>
@@ -91,6 +95,7 @@
     <section class="product">
       <div class="container">
         <div class="product__inner">
+          <button class="product__filters-btn"></button>
           <div class="product__filters filter">
 
             <div class="filter__item filter-category">
@@ -559,7 +564,7 @@
         <a class="footer-top__email" href="mailto:contact@Glee.com">EMAIL: contact@Glee.com</a>
       </div>
       <div class="footer-top__item footer-top__nav">
-        <h6 class="footer-top__title">
+        <h6 class="footer-top__title footer-top__title-hidden">
           Services
         </h6>
         <ul class="footer-top__list">
@@ -581,7 +586,7 @@
         </ul>
       </div>
       <div class="footer-top__item footer-top__nav">
-        <h6 class="footer-top__title">
+        <h6 class="footer-top__title footer-top__title-hidden">
           Account
         </h6>
         <ul class="footer-top__list">

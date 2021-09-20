@@ -10,3 +10,21 @@
     margin-bottom: 10px;
   }
 }
+
+@media (max-width: 768px){
+  .top{
+    &__title{
+      font-size: 30px;
+      line-height: 20px;
+    }
+  }
+}
+
+@media (max-width: 450px){
+  .top{
+    &__title{
+      font-size: 26px;
+      line-height: 16px;
+    }
+  }
+}
